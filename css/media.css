@@ -1,0 +1,40 @@
+@media screen and (max-width: 767px) {
+  .container {
+    position: relative;
+    max-width: 428px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .address-list {
+    display: none;
+  }
+
+  .mob-menu-open {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+}
+
+@media screen and (max-width: 1157px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu-open {
+    display: none;
+  }
+}
