@@ -1,9 +1,16 @@
 @media screen and (max-width: 767px) {
   .container {
-    position: relative;
     max-width: 428px;
     padding: 0 16px;
     margin: 0 auto;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 22px;
   }
 
   .nav-list {
@@ -15,9 +22,6 @@
   }
 
   .mob-menu-open {
-    position: absolute;
-    top: 24px;
-    right: 16px;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -25,16 +29,43 @@
   }
 }
 
-@media screen and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 16px;
     margin: 0 auto;
   }
-}
 
-@media screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .mob-menu-open {
     display: none;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .address-list {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .address-item {
+    line-height: 0;
+  }
+
+  .address-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
 }

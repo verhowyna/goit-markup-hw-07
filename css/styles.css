@@ -51,19 +51,7 @@ body {
   background-color: #ffffff;
 }
 
-.container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 /* -------- HEADER -------- */
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -72,8 +60,8 @@ body {
 }
 
 .page-nav {
-  padding-top: 24px;
-  padding-bottom: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -98,7 +86,6 @@ body {
   align-items: center;
   gap: 40px;
 }
-
 .nav-item {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -130,6 +117,12 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .address-link {
