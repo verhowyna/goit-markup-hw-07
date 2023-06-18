@@ -27,6 +27,75 @@
     padding: 0;
     line-height: 0;
   }
+
+  .hero {
+    max-width: 767px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg-mob.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/bg-mob@2x.jpg");
+    }
+  }
+
+  .hero-title {
+    font-size: 36px;
+    max-width: 320px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--second-title-color);
+    margin-bottom: 72px;
+  }
+
+  .modal {
+    width: 392px;
+    padding: 72px 16px 24px 16px;
+  }
+
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .feature-wrap {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .feature-item {
+    width: 100%;
+  }
+
+  .feature-icon {
+    display: none;
+  }
+
+  .feature-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--first-title-color);
+  }
+
+  .feature-text {
+    font-weight: 500;
+  }
 }
 
 @media screen and (max-width: 427px) {
@@ -36,6 +105,44 @@
 
   .mob-menu-social-list {
     gap: 30px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .modal {
+    width: 320px;
+  }
+
+  .modal-text {
+    min-width: 288px;
+    font-size: 12px;
+  }
+
+  .modal-form {
+    width: 288px;
+  }
+
+  .modal-form-check {
+    font-size: 10px;
+  }
+
+  .user-policy {
+    margin-right: 4px;
+  }
+
+  .feature-item {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .feature-title {
+    font-size: 28px;
+  }
+
+  .feature-text {
+    font-size: 12px;
   }
 }
 
@@ -81,6 +188,35 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+  }
+
+  .hero-title {
+    margin-bottom: 36px;
+  }
+
+  .feature-wrap {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .feature-item {
+    width: 356px;
+  }
+
+  .feature-icon {
+    display: none;
+  }
+
+  .feature-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--first-title-color);
+  }
+
+  .feature-text {
+    font-weight: 500;
   }
 }
 
