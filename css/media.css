@@ -109,6 +109,15 @@
     flex-direction: column;
     gap: 72px;
   }
+
+  .customers-list {
+    flex-wrap: wrap;
+    gap: 72px 16px;
+  }
+
+  .customers-list-item {
+    width: calc((100% - 16px) / 2);
+  }
 }
 
 @media screen and (max-width: 427px) {
@@ -243,6 +252,19 @@
   .team-list {
     flex-wrap: wrap;
     gap: 64px 24px;
+  }
+
+  .customers-container {
+    max-width: 584px;
+  }
+
+  .customers-list {
+    flex-wrap: wrap;
+    gap: 72px 16px;
+  }
+
+  .customers-list-item {
+    width: calc((100% - 48px) / 3);
   }
 }
 
