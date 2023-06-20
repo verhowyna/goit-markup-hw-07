@@ -1,0 +1,29 @@
+@media screen and (max-width: 767px) {
+  .portfolio-section {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .btn-item {
+    padding: 12px 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    margin-bottom: 64px;
+  }
+}

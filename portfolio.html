@@ -16,6 +16,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/media-portfolio.css" />
   </head>
   <body>
     <!-- Header -->
@@ -38,6 +40,16 @@
               <a class="nav-link link" href="">Contacts</a>
             </li>
           </ul>
+          <button type="button" class="mob-menu-open is-open js-open-menu">
+            <svg
+              class="mob-menu-open-icon"
+              stroke="#2e2f42"
+              width="32"
+              height="22"
+            >
+              <use href="./images/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
         </nav>
         <address class="address">
           <ul class="address-list list">
@@ -53,6 +65,64 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <button class="mob-menu-close-btn js-close-menu">
+          <svg class="mob-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <div class="mob-menu-wrap">
+          <div class="mob-menu-contacts">
+            <a class="mob-menu-phone-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+            <a class="mob-menu-email-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+          <ul class="mob-menu-social-list list">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -312,5 +382,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
